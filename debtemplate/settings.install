@@ -1,5 +1,5 @@
-automount-open.desktop                       usr/share/@CODENAME_SAFE@-cinnamon-settings/
-cinnamon-background-properties/*.xml         usr/share/cinnamon-background-properties/
-schemas/installed/*.gschema.override         usr/share/glib-2.0/schemas
-etc                                          usr/share/@CODENAME_SAFE@-cinnamon-settings/
-usr                                          usr/share/@CODENAME_SAFE@-cinnamon-settings/
+automount-open.desktop                     usr/share/@CODENAME_SAFE@-cinnamon-settings/
+usr/share/cinnamon-background-propertiesl  usr/share/
+usr/share/glib2-0/schemas/installed        usr/share/glib-2.0/schemas
+etc                                        usr/share/@CODENAME_SAFE@-cinnamon-settings/
+usr                                        usr/share/@CODENAME_SAFE@-cinnamon-settings/

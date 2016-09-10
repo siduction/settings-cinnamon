@@ -16,8 +16,20 @@ debian_rules
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/copyright \
+    > ./debian/copyright
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/get-template \
+    > ./debian/get-template
+chmod 755 ./debian/get-template
+
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ./debtemplate/settings.install \
-    > debian/${CODENAME_SAFE}-cinnamon-settings.install
+    > ./debian/${CODENAME_SAFE}-cinnamon-settings.install
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ./debtemplate/settings.postinst \
@@ -47,26 +59,25 @@ sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     ./debtemplate/livesettings.service \
     > ./debian/${CODENAME_SAFE}-cinnamon-livesettings.service
 
-## templte
-# fix me
-# [ -d cinnamon ] && rm -r cinnamon
-# cp -a templates/cinnamon .
+## templating
 
+[ -d ./etc ] && rm -rf ./etc
+[ -d ./usr ] && rm -rf ./usr
+cp -r ./template/* .
 
-
-#sed -e "s/\@BACKGROUND_RENDERING_OPTION\@/${BACKGROUND_RENDERING_OPTION}/g" \
-#    -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-#    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-#    ./template/schemas/installed/91_org.cinnamon.desktop.background.gschema.override \
-#    > ./schemas/installed/91_org.cinnamon.desktop.background.gschema.override
-#sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-#    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-#    ./template/automount-open.desktop \
-#    > ./automount-open.desktop
-#sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-#    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-#    ./template/cinnamon-background-properties/siduction.xml \
-    > ./cinnamon-background-properties/siduction.xml
+sed -e "s/\@BACKGROUND_RENDERING_OPTION\@/${BACKGROUND_RENDERING_OPTION}/g" \
+    -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./template/usr/share/glib-2.0/schemas/installed/91_org.cinnamon.desktop.background.gschema.override \
+    > ./usr/share/glib-2.0/schemas/installed/91_org.cinnamon.desktop.background.gschema.override
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./template/automount-open.desktop \
+    > ./automount-open.desktop
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./template/usr/share/cinnamon-background-properties/siduction.xml \
+    > ./usr/share/cinnamon-background-properties/siduction.xml
 
 grub_template cinnamon
 
