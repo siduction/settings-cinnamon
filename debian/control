@@ -7,9 +7,9 @@ Uploaders: Torsten Wohlfarth <towo@siduction.org>,
 Build-Depends: debhelper (>= 9),
                dh-systemd
 Standards-Version: 3.9.8
-Homepage: https://git.siduction.org/extra/siduction-cinnamon
-Vcs-Git: https://git.siduction.org/extra/siduction-cinnamon.git
-Vcs-Browser: https://git.siduction.org/extra/siduction-cinnamon.git
+Homepage: https://git.siduction.org/extra/settings-cinnamon
+Vcs-Git: https://git.siduction.org/extra/settings-cinnamon.git
+Vcs-Browser: https://git.siduction.org/extra/settings-cinnamon.git
 
 # cinnamon Settings
 Package: paintitblack-cinnamon-settings
