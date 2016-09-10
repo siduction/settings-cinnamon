@@ -15,7 +15,7 @@ debian_rules
 # debian
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
     ./debtemplate/copyright \
     > ./debian/copyright
 
