@@ -1,2 +1,2 @@
-cinnamon/schemas/live/*.gschema.override   usr/share/glib-2.0/schemas
-cinnamon/cinnamon-cheatcodes               usr/share/paintitblack-cinnamon-livesettings
+usr/share/glib-2.0/schemas/live   usr/share/glib-2.0/schemas/
+cinnamon-cheatcodes               usr/share/paintitblack-cinnamon-livesettings
