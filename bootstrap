@@ -30,6 +30,7 @@ sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ./debtemplate/settings.install \
     > ./debian/${CODENAME_SAFE}-cinnamon-settings.install
+
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ./debtemplate/settings.postinst \
@@ -39,6 +40,7 @@ sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ./debtemplate/livesettings.install \
     > ./debian/${CODENAME_SAFE}-cinnamon-livesettings.install
+
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ./debtemplate/livesettings.lintian-overrides \
@@ -65,19 +67,21 @@ sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
 [ -d ./usr ] && rm -rf ./usr
 cp -r ./template/* .
 
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./template/automount-open.desktop \
+    > ./automount-open.desktop
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./template/usr/share/cinnamon-background-properties/siduction.xml \
+    > ./usr/share/cinnamon-background-properties/siduction.xml
+
 sed -e "s/\@BACKGROUND_RENDERING_OPTION\@/${BACKGROUND_RENDERING_OPTION}/g" \
     -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
     ./template/usr/share/glib-2.0/schemas/installed/91_org.cinnamon.desktop.background.gschema.override \
     > ./usr/share/glib-2.0/schemas/installed/91_org.cinnamon.desktop.background.gschema.override
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./template/automount-open.desktop \
-    > ./automount-open.desktop
-sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
-    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
-    ./template/usr/share/cinnamon-background-properties/siduction.xml \
-    > ./usr/share/cinnamon-background-properties/siduction.xml
 
 grub_template cinnamon
 
