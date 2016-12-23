@@ -6,8 +6,6 @@ set -e
 
 case "$1" in
     configure)
-        ## applications ##
-        cp -af /usr/share/patience-cinnamon-settings/usr/share           /usr
         ## dconf ##
         cp -af /usr/share/patience-cinnamon-settings/etc/dconf           /etc
         ## grub ##
