@@ -1,3 +1,9 @@
+patience-cinnamon-settings (2016.1.0-3) unstable; urgency=medium
+
+  * killed livesettings.postinst 
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 28 Jan 2017 02:05:09 +0100
+
 patience-cinnamon-settings (2016.1.0-2) unstable; urgency=medium
 
   * fixed faulty postinst 
