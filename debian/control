@@ -22,7 +22,6 @@ Description: Cinnamon settings in installed mode
 Package: patience-cinnamon-livesettings
 Architecture: all
 Depends: ${misc:Depends},
-         sidu-installer (>= 2014.01.10),
          siduction-icons,
          patience-cinnamon-artwork,
          patience-cinnamon-settings,
