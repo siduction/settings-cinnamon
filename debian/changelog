@@ -1,3 +1,9 @@
+patience-cinnamon-settings (2017.1.0-1) unstable; urgency=medium
+
+  * release branding
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 05 Mar 2017 17:45:13 +0100
+
 patience-cinnamon-settings (2016.1.0-4) unstable; urgency=medium
 
   * removed sidu-installer dependency 
