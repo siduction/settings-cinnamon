@@ -1,3 +1,11 @@
+patience-cinnamon-settings (2017.2.0-1) unstable; urgency=medium
+
+  * New release
+  * Bumped Standards and compat
+  * fix apt behaviour and some dependencies
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 25 Dec 2017 15:49:10 +0100
+
 patience-cinnamon-settings (2017.1.0-1) unstable; urgency=medium
 
   * release branding
