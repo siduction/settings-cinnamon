@@ -1,0 +1,77 @@
+!/bin/bash
+set -e
+
+
+source ./zfunctions.sh
+
+source_version_info
+debian_changelog
+cleanup_old_builds
+debian_cleanup
+debian_foo_basics
+basic_control cinnamon
+debian_rules
+
+# debian
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
+    ../template/debian/copyright \
+    > ./debian/copyright
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ../template/debian/${CODENAME_SAFE}-cinnamon-settings.install \
+    > ./debian/${CODENAME_SAFE}-cinnamon-settings.install
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ../template/debian/${CODENAME_SAFE}-cinnamon-settings.postinst \
+    > ./debian/${CODENAME_SAFE}-cinnamon-settings.postinst
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ../template/debian/${CODENAME_SAFE}-cinnamon-livesettings.install \
+    > ./debian/${CODENAME_SAFE}-cinnamon-livesettings.install
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ../template/debian/${CODENAME_SAFE}-cinnamon-livesettings.lintian-overrides \
+    > ./debian/${CODENAME_SAFE}-cinnamon-livesettings.lintian-overrides
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ../template/debian/${CODENAME_SAFE}-cinnamon-livesettings.preinst \
+    > ./debian/${CODENAME_SAFE}-cinnamon-livesettings.preinst
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ../template/debian/${CODENAME_SAFE}-cinnamon-livesettings.service \
+    > ./debian/${CODENAME_SAFE}-cinnamon-livesettings.service
+
+## templating
+
+[ -d ./etc ] && rm -rf ./etc
+[ -d ./usr ] && rm -rf ./usr
+cp -a ../template/etc .
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ../template/automount-open.desktop \
+    > ./automount-open.desktop
+
+sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ../template/usr/share/cinnamon-background-properties/siduction.xml \
+    > ./usr/share/cinnamon-background-properties/siduction.xml
+
+sed -e "s/\@BACKGROUND_RENDERING_OPTION\@/${BACKGROUND_RENDERING_OPTION}/g" \
+    -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ../template/usr/share/glib-2.0/schemas/installed/91_org.cinnamon.desktop.background.gschema.override \
+    > ./usr/share/glib-2.0/schemas/installed/91_org.cinnamon.desktop.background.gschema.override
+
+grub_template cinnamon
+
+
+exit 0
