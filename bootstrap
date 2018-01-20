@@ -1,8 +1,8 @@
-!/bin/bash
+#!/bin/bash
 set -e
 
 
-source ./zfunctions.sh
+[ -e ../template/zfunctions.sh ] && source ../template/zfunctions.sh
 
 source_version_info
 debian_changelog
@@ -54,6 +54,7 @@ sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
 [ -d ./etc ] && rm -rf ./etc
 [ -d ./usr ] && rm -rf ./usr
 cp -a ../template/etc .
+cp -a ../template/usr .
 
 sed -e "s/\@CODENAME_SAFE\@/${CODENAME_SAFE}/g" \
     -e "s/\@DISPLAY\@/${DISPLAY}/g" \
