@@ -1,3 +1,9 @@
+patience-cinnamon-settings (2018.2.0-2) unstable; urgency=medium
+
+  * added an override for mate-terminal 
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 03 Mar 2018 21:40:09 +0100
+
 patience-cinnamon-settings (2018.2.0-1) unstable; urgency=medium
 
   * release 18.2
