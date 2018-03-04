@@ -1,0 +1,3 @@
+[org.mate.terminal.profiles.default]
+login-shell=true
+
