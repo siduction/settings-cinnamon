@@ -5,7 +5,7 @@ Maintainer: Alf Gaida <agaida@siduction.org>
 Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
 Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
+Standards-Version: 4.1.4
 Homepage: https://git.siduction.org/extra/settings-cinnamon
 Vcs-Git: https://git.siduction.org/extra/settings-cinnamon.git
 Vcs-Browser: https://git.siduction.org/extra/settings-cinnamon.git
@@ -14,7 +14,9 @@ Package: @CODENAME_SAFE@-cinnamon-settings
 Architecture: all
 Depends: ${misc:Depends},
          @CODENAME_SAFE@-cinnamon-artwork,
-         @CODENAME_SAFE@-sddm-settings | @CODENAME_SAFE@-lightdm-gtk-settings | @CODENAME_SAFE@-gdm3-settings,
+         @CODENAME_SAFE@-sddm-settings 
+	 | @CODENAME_SAFE@-lightdm-gtk-settings 
+	 | @CODENAME_SAFE@-gdm3-settings,
          @CODENAME_SAFE@-common-settings
 Description: Cinnamon settings (installed mode)
  Pushes Cinnamon overrides schemas in installed mode
