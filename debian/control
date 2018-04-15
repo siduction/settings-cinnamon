@@ -4,25 +4,26 @@ Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
 Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
-Build-Depends: debhelper (>= 9),
-               dh-systemd
-Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.1.4
 Homepage: https://git.siduction.org/extra/settings-cinnamon
 Vcs-Git: https://git.siduction.org/extra/settings-cinnamon.git
 Vcs-Browser: https://git.siduction.org/extra/settings-cinnamon.git
 
-# cinnamon Settings
 Package: paintitblack-cinnamon-settings
 Architecture: all
 Depends: ${misc:Depends},
+         paintitblack-cinnamon-artwork,
+         paintitblack-sddm-settings 
+	 | paintitblack-lightdm-gtk-settings 
+	 | paintitblack-gdm3-settings,
          paintitblack-common-settings
-Description: Cinnamon settings in installed mode
+Description: Cinnamon settings (installed mode)
  Pushes Cinnamon overrides schemas in installed mode
 
 Package: paintitblack-cinnamon-livesettings
 Architecture: all
 Depends: ${misc:Depends},
-         sidu-installer (>= 2014.01.10),
          siduction-icons,
          paintitblack-cinnamon-artwork,
          paintitblack-cinnamon-settings,
@@ -30,6 +31,6 @@ Depends: ${misc:Depends},
          paintitblack-sddm-livesettings
          | paintitblack-ligthdm-gtk-livesettings
          | paintitblack-gdm3-livesettings
-Description: Cinnamon settings in live mode
+Description: Cinnamon settings (live mode)
  Provides default settings for appearance and applications of the Cinnamon
  desktop in live mode.
