@@ -6,9 +6,9 @@ Uploaders: Torsten Wohlfarth <towo@siduction.org>,
            Ovidiu Angelescu <convbsd@siduction.net>
 Build-Depends: debhelper (>= 11)
 Standards-Version: 4.1.4
-Homepage: https://git.siduction.org/extra/settings-cinnamon
+Vcs-Browser: https://git.siduction.org/extra/settings-cinnamon
 Vcs-Git: https://git.siduction.org/extra/settings-cinnamon.git
-Vcs-Browser: https://git.siduction.org/extra/settings-cinnamon.git
+Homepage: https://git.siduction.org/extra/settings-cinnamon
 
 Package: @CODENAME_SAFE@-cinnamon-settings
 Architecture: all
