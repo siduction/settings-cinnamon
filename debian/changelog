@@ -1,3 +1,9 @@
+patience-cinnamon-settings (2018.3.0-1) unstable; urgency=medium
+
+  * release 18.3
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 12 May 2018 12:57:03 +0200
+
 patience-cinnamon-settings (2018.2.0-7) unstable; urgency=medium
 
   * back to start - we use the terminal as default non-login terminal
@@ -18,7 +24,7 @@ patience-cinnamon-settings (2018.2.0-5) unstable; urgency=medium
 
 patience-cinnamon-settings (2018.2.0-4) unstable; urgency=medium
 
-  * start terminal as login shell 
+  * start terminal as login shell
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 03 Mar 2018 22:26:49 +0100
 
@@ -30,7 +36,7 @@ patience-cinnamon-settings (2018.2.0-3) unstable; urgency=medium
 
 patience-cinnamon-settings (2018.2.0-2) unstable; urgency=medium
 
-  * added an override for mate-terminal 
+  * added an override for mate-terminal
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 03 Mar 2018 21:40:09 +0100
 
@@ -48,7 +54,7 @@ patience-cinnamon-settings (2018.1.0-4) unstable; urgency=medium
 
 patience-cinnamon-settings (2018.1.0-2) unstable; urgency=medium
 
-  * fixed grub to 2018 
+  * fixed grub to 2018
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 27 Dec 2017 01:27:09 +0100
 
@@ -74,19 +80,19 @@ patience-cinnamon-settings (2017.1.0-1) unstable; urgency=medium
 
 patience-cinnamon-settings (2016.1.0-4) unstable; urgency=medium
 
-  * removed sidu-installer dependency 
+  * removed sidu-installer dependency
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 28 Jan 2017 22:11:23 +0100
 
 patience-cinnamon-settings (2016.1.0-3) unstable; urgency=medium
 
-  * killed livesettings.postinst 
+  * killed livesettings.postinst
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 28 Jan 2017 02:05:09 +0100
 
 patience-cinnamon-settings (2016.1.0-2) unstable; urgency=medium
 
-  * fixed faulty postinst 
+  * fixed faulty postinst
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 23 Dec 2016 17:17:27 +0100
 
