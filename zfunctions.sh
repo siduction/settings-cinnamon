@@ -99,6 +99,5 @@ function debian_foo_basics {
     mkdir -p ./debian/source
     cp -a ../template/debian/source/format ./debian/source/
     cp -a ../template/debian/source/options ./debian/source/
-    cp -a ../template/debian/compat  ./debian/
 }
 
