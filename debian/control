@@ -1,4 +1,4 @@
-Source: patience-cinnamon-settings
+Source: c-blues-cinnamon-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,27 +10,27 @@ Vcs-Browser: https://git.siduction.org/extra/settings-cinnamon
 Vcs-Git: https://git.siduction.org/extra/settings-cinnamon.git
 Homepage: https://git.siduction.org/extra/settings-cinnamon
 
-Package: patience-cinnamon-settings
+Package: c-blues-cinnamon-settings
 Architecture: all
 Depends: ${misc:Depends},
-         patience-cinnamon-artwork,
-         patience-sddm-settings 
-	 | patience-lightdm-gtk-settings 
-	 | patience-gdm3-settings,
-         patience-common-settings
+         c-blues-cinnamon-artwork,
+         c-blues-sddm-settings 
+	 | c-blues-lightdm-gtk-settings 
+	 | c-blues-gdm3-settings,
+         c-blues-common-settings
 Description: Cinnamon settings (installed mode)
  Pushes Cinnamon overrides schemas in installed mode
 
-Package: patience-cinnamon-livesettings
+Package: c-blues-cinnamon-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         patience-cinnamon-artwork,
-         patience-cinnamon-settings,
-         patience-common-livesettings,
-         patience-sddm-livesettings
-         | patience-ligthdm-gtk-livesettings
-         | patience-gdm3-livesettings
+         c-blues-cinnamon-artwork,
+         c-blues-cinnamon-settings,
+         c-blues-common-livesettings,
+         c-blues-sddm-livesettings
+         | c-blues-ligthdm-gtk-livesettings
+         | c-blues-gdm3-livesettings
 Description: Cinnamon settings (live mode)
  Provides default settings for appearance and applications of the Cinnamon
  desktop in live mode.

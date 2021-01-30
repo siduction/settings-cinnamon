@@ -1,8 +1,12 @@
-c-blues-cinnamon-settings (2021.1.0) UNRELEASED; urgency=medium
+c-blues-cinnamon-settings (2021.1.0) unstable; urgency=medium
 
+  [ Hendrik Lehmbruch ]
   * preparing 21.1 release c-blues
 
- -- Hendrik Lehmbruch <hendrikl@siduction.org>  Wed, 27 Jan 2021 18:24:45 +0100
+  [ Torsten Wohlfarth ]
+  * build and upload for release
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sat, 30 Jan 2021 17:06:55 +0100
 
 patience-cinnamon-settings (2018.3.0-1) unstable; urgency=medium
 
