@@ -1,3 +1,9 @@
+cblues-cinnamon-settings (2021.1.0-4) unstable; urgency=medium
+
+  * revert changes, it was wrong
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Wed, 03 Feb 2021 18:01:52 +0100
+
 cblues-cinnamon-settings (2021.1.0-3) unstable; urgency=medium
 
   * set theme to BlackMATE
