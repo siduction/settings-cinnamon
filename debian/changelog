@@ -1,3 +1,9 @@
+cblues-cinnamon-settings (2021.1.0-5) unstable; urgency=medium
+
+  * add dconf/user to skeleton
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Wed, 03 Feb 2021 18:09:28 +0100
+
 cblues-cinnamon-settings (2021.1.0-4) unstable; urgency=medium
 
   * revert changes, it was wrong
