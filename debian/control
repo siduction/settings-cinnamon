@@ -1,4 +1,4 @@
-Source: cblues-cinnamon-settings
+Source: farewell-cinnamon-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,27 +10,27 @@ Vcs-Browser: https://git.siduction.org/extra/settings-cinnamon
 Vcs-Git: https://git.siduction.org/extra/settings-cinnamon.git
 Homepage: https://git.siduction.org/extra/settings-cinnamon
 
-Package: cblues-cinnamon-settings
+Package: farewell-cinnamon-settings
 Architecture: all
 Depends: ${misc:Depends},
-         cblues-cinnamon-artwork,
-         cblues-sddm-settings 
-	 | cblues-lightdm-gtk-settings 
-	 | cblues-gdm3-settings,
-         cblues-common-settings
+         farewell-cinnamon-artwork,
+         farewell-sddm-settings 
+	 | farewell-lightdm-gtk-settings 
+	 | farewell-gdm3-settings,
+         farewell-common-settings
 Description: Cinnamon settings (installed mode)
  Pushes Cinnamon overrides schemas in installed mode
 
-Package: cblues-cinnamon-livesettings
+Package: farewell-cinnamon-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         cblues-cinnamon-artwork,
-         cblues-cinnamon-settings,
-         cblues-common-livesettings,
-         cblues-sddm-livesettings
-         | cblues-ligthdm-gtk-livesettings
-         | cblues-gdm3-livesettings
+         farewell-cinnamon-artwork,
+         farewell-cinnamon-settings,
+         farewell-common-livesettings,
+         farewell-sddm-livesettings
+         | farewell-ligthdm-gtk-livesettings
+         | farewell-gdm3-livesettings
 Description: Cinnamon settings (live mode)
  Provides default settings for appearance and applications of the Cinnamon
  desktop in live mode.

@@ -1,3 +1,9 @@
+farewell-cinnamon-settings (2021.1.99-1) unstable; urgency=medium
+
+  * prepare farewell packaging
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Thu, 10 Jun 2021 20:21:03 +0200
+
 cblues-cinnamon-settings (2021.1.0-5) unstable; urgency=medium
 
   * add dconf/user to skeleton
