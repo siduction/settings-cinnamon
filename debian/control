@@ -1,4 +1,4 @@
-Source: 2021-03-cinnamon-settings
+Source: wintersky-cinnamon-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,27 +10,27 @@ Vcs-Browser: https://git.siduction.org/extra/settings-cinnamon
 Vcs-Git: https://git.siduction.org/extra/settings-cinnamon.git
 Homepage: https://git.siduction.org/extra/settings-cinnamon
 
-Package: 2021-03-cinnamon-settings
+Package: wintersky-cinnamon-settings
 Architecture: all
 Depends: ${misc:Depends},
-         2021-03-cinnamon-artwork,
-         2021-03-sddm-settings
-	 | 2021-03-lightdm-gtk-settings
-	 | 2021-03-gdm3-settings,
-         2021-03-common-settings
+         wintersky-cinnamon-artwork,
+         wintersky-sddm-settings
+	 | wintersky-lightdm-gtk-settings
+	 | wintersky-gdm3-settings,
+         wintersky-common-settings
 Description: Cinnamon settings (installed mode)
  Pushes Cinnamon overrides schemas in installed mode
 
-Package: 2021-03-cinnamon-livesettings
+Package: wintersky-cinnamon-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         2021-03-cinnamon-artwork,
-         2021-03-cinnamon-settings,
-         2021-03-common-livesettings,
-         2021-03-sddm-livesettings
-         | 2021-03-ligthdm-gtk-livesettings
-         | 2021-03-gdm3-livesettings
+         wintersky-cinnamon-artwork,
+         wintersky-cinnamon-settings,
+         wintersky-common-livesettings,
+         wintersky-sddm-livesettings
+         | wintersky-ligthdm-gtk-livesettings
+         | wintersky-gdm3-livesettings
 Description: Cinnamon settings (live mode)
  Provides default settings for appearance and applications of the Cinnamon
  desktop in live mode.
