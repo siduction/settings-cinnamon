@@ -11,9 +11,9 @@ case "$1" in
         ## grub ##
         cp -af /usr/share/wintersky-cinnamon-settings/etc/default         /etc
         ## NetworkManager ##
-        cp -af /usr/share/wintersky-xorg-settings/etc/NetworkManager           /etc
+        cp -af /usr/share/wintersky-cinnamon-settings/etc/NetworkManager           /etc
         ## iwd ##
-        cp -af /usr/share/wintersky-xorg-settings/etc/iwd                      /etc
+        cp -af /usr/share/wintersky-cinannamon-settings/etc/iwd                      /etc
         ## polkit ##
         cp -af /usr/share/wintersky-cinnamon-settings/etc/polkit-1        /etc
         ## skel ##
