@@ -1,4 +1,4 @@
-Source: wintersky-cinnamon-settings
+Source: mow-cinnamon-settings
 Section: misc
 Priority: optional
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -10,27 +10,27 @@ Vcs-Browser: https://git.siduction.org/extra/settings-cinnamon
 Vcs-Git: https://git.siduction.org/extra/settings-cinnamon.git
 Homepage: https://git.siduction.org/extra/settings-cinnamon
 
-Package: wintersky-cinnamon-settings
+Package: mow-cinnamon-settings
 Architecture: all
 Depends: ${misc:Depends},
-         wintersky-cinnamon-artwork,
-         wintersky-sddm-settings
-	 | wintersky-lightdm-gtk-settings
-	 | wintersky-gdm3-settings,
-         wintersky-common-settings
+         mow-cinnamon-artwork,
+         mow-sddm-settings
+	 | mow-lightdm-gtk-settings
+	 | mow-gdm3-settings,
+         mow-common-settings
 Description: Cinnamon settings (installed mode)
  Pushes Cinnamon overrides schemas in installed mode
 
-Package: wintersky-cinnamon-livesettings
+Package: mow-cinnamon-livesettings
 Architecture: all
 Depends: ${misc:Depends},
          siduction-icons,
-         wintersky-cinnamon-artwork,
-         wintersky-cinnamon-settings,
-         wintersky-common-livesettings,
-         wintersky-sddm-livesettings
-         | wintersky-ligthdm-gtk-livesettings
-         | wintersky-gdm3-livesettings
+         mow-cinnamon-artwork,
+         mow-cinnamon-settings,
+         mow-common-livesettings,
+         mow-sddm-livesettings
+         | mow-ligthdm-gtk-livesettings
+         | mow-gdm3-livesettings
 Description: Cinnamon settings (live mode)
  Provides default settings for appearance and applications of the Cinnamon
  desktop in live mode.
