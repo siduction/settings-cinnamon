@@ -1,3 +1,9 @@
+mow-cinnamon-settings (2022.1.0-2) unstable; urgency=medium
+
+  * fix typo
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Wed, 28 Dec 2022 22:53:48 +0100
+
 mow-cinnamon-settings (2022.1.0-1) unstable; urgency=medium
 
   * Masters of War packaging

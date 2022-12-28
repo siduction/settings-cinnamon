@@ -13,7 +13,7 @@ case "$1" in
         ## NetworkManager ##
         cp -af /usr/share/mow-cinnamon-settings/etc/NetworkManager           /etc
         ## iwd ##
-        cp -af /usr/share/mow-cinannamon-settings/etc/iwd                      /etc
+        cp -af /usr/share/mow-cinnamon-settings/etc/iwd                      /etc
         ## polkit ##
         cp -af /usr/share/mow-cinnamon-settings/etc/polkit-1        /etc
         ## skel ##
