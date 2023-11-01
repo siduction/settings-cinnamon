@@ -1,3 +1,9 @@
+giants-cinnamon-settings (2023.1.0-2) unstable; urgency=medium
+
+  * giants
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Mon, 30 Oct 2023 17:03:49 +0100
+
 farewell-cinnamon-settings (2021.2.0-1) unstable; urgency=medium
 
   * set final version

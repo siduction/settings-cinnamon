@@ -1,7 +1,7 @@
-WALLPAPER=wintersky
-CODENAME=wintersky
-CODENAME_SAFE=wintersky
-VERSION=2021.3.0
+WALLPAPER=giants
+CODENAME=giants
+CODENAME_SAFE=giants
+VERSION=2023.1.0
 DISTRIBUTION=unstable
 
 FLL_LIVE_USER=siducer

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Automount Open file
 Icon=
-Exec=/usr/share/wintersky-cinnamon-settings/automount-open
+Exec=/usr/share/giants-cinnamon-settings/automount-open
 Terminal=false
 Type=Application
 Categories=Utility;
